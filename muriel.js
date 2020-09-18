@@ -7,20 +7,25 @@ function setup() {
   helvetica = loadFont('/proxima.otf');
   textFont(helvetica);
   textSize(150);
-  frameRate(30);
+  frameRate(60);
 }
 
 function draw() {
-background(250);
+blendMode(LIGHTEST);
+background(256);
+
 
 colorMode(HSB, 100);
-fill(50, 65, 100, 90);
+blendMode(MULTIPLY);
+
+
+fill(50, 85, 100);
 text('BAUHAUS', blue, 300);
 
-fill(330, 88, 170, 90);
+fill(330, 88, 100);
 text('BAUHAUS', pink, 300);
 
-fill(18, 100, 100, 90);
+fill(18, 100, 100);
 text('BAUHAUS', yellow, 300);
 
 // let time = millis();
